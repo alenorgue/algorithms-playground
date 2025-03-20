@@ -7,8 +7,14 @@
  * 
 */
 
-function sumDeposits(deposits) {
-    return;
+function sumDeposits(deposits) { 
+   let sum = 0;
+   
+   for (let i =0; i < deposits.length; i++) { 
+    if (deposits[i] > 0){ sum += deposits[i]}
+   }
+   
+    return sum;
 }
 
 console.log(sumDeposits([200, 300, -100, 500])); 

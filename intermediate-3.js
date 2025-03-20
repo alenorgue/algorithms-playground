@@ -1,5 +1,5 @@
 /**
- * Constrir un array a partir de otro. 
+ * Construir un array a partir de otro. 
  * 
  * Otra operación típica es ir construyendo un array mientras se recorre otro
  * 
@@ -10,7 +10,10 @@
 
 function getWords5Letters(words) {
     let words5Letters = [];
-
+    for (let i =0; i < words.length; i++) { 
+        if (words[i].length === 5)
+        words5Letters.push(words[i])}
+      
     return words5Letters;
 }
 
@@ -26,3 +29,6 @@ console.log(getWords5Letters(["sol", "luz", "mar", "cielo", "sol"]));
 
 console.log(getWords5Letters(["sol", "luz", "mar", "sol"]));
 // []
+console.log(getWords5Letters(["sol", "luz", "mar", "sol","mesa", "silla", "cuchara", "tenedor", "cama","perro", "gato", "loro", "pez", "ciervo",]));
+// []
+console.log(getWords5Letters([ "silla", "duchar", "tenedor", "camas","perros", "gatos", "loros", "peces", "ciervo",]));
